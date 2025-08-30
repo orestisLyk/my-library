@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    background-color: rgb(236, 236, 236);
+    height: 100vh;
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sidebar {
+    background-color: rgb(255, 191, 71);
+    color: white;
+    font-size: large;
+    display: grid;
+    grid-column: 1;
+    grid-template-rows: 20vh 1fr;
+    align-items: start;
+    box-shadow: 2px 2px 3px gray;
+}
+
+.sidebar > * {
+    padding: 10px;
+}
+
+.book-adder {
+    display: grid;
+    gap: 2vh;
+    justify-items: start;
+}
+
+.book-adder > label > * {
+    margin-top: 5px;
+}
+
+button {
+    padding: 5px 13px;
+    background-color: white;
+    border-style: none;
+    border-radius: 7px;
+}
+
+button:hover {
+    box-shadow: 0px 0px 3px rgb(85, 85, 85);
+}
+
+button:active {
+    background-color: rgb(231, 231, 231);
+}
+
+.book-container {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min-content,250px));
+    gap: 20px;
+    grid-template-rows: repeat(auto-fill,200px);
+}
+
+.card {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgb(85, 85, 85);
+
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+}
+
+input,select {
+    border-radius: 4px;
+    border-style: none;
+    padding: 5px;
+}
